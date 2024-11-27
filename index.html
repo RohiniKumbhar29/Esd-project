@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Attendance Tracker</h1>
+    </header>
+
+    <main>
+        <!-- Student Portal -->
+        <div id="studentPortal">
+            <h3>Select Subject to View Attendance</h3>
+            <select id="studentSubjectSelect">
+                <option value="DC">DC</option>
+                <option value="CO">CO</option>
+                <option value="DAA">DAA</option>
+                <option value="ESD">ESD</option>
+            </select>
+
+            <!-- Search Button -->
+            <button class="btn" id="searchButton" onclick="searchSubject()">Search</button>
+
+            <h3>Attendance Records</h3>
+            <table class="attendance-table">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Attendance (%)</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceRecords">
+                    <!-- Attendance records will appear here -->
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
