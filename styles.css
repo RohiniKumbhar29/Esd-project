@@ -2,7 +2,154 @@
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
+    padding: 0;/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #FAF9F6;
+    color: #333;
+}
+
+header {
+    background-color: #152238;
+    color: white;
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-logo {
+    height: 80px;
+    width: auto;
+    margin-left: 2em;
+}
+
+/* Main Section */
+main {
+    margin: 20px;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Attendance Table */
+.table-container {
+    overflow-x: auto; /* Allow horizontal scrolling */
+}
+
+.attendance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    min-width: 600px;
+}
+
+.attendance-table th, .attendance-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.attendance-table th {
+    background-color: #152238;
+    color: white;
+}
+
+.attendance-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.attendance-table tr:hover {
+    background-color: #ddd;
+}
+
+/* Inputs */
+select, #studentSearchBox {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 220px;
+    display: inline-block;
+}
+
+.dropdown-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Media Queries */
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1em;
+    }
+
+    h1 {
+        font-size: 1.6em;
+    }
+
+    .header-logo {
+        margin: 10px 0;
+        height: 60px;
+    }
+
+    select, #studentSearchBox {
+        width: 100%; /* Full-width inputs on mobile */
+    }
+
+    .attendance-table {
+        font-size: 0.9em;
+    }
+
+    .table-container {
+        overflow-x: auto;
+    }
+}
+
+/* Tablet View */
+@media screen and (max-width: 1024px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .header-logo {
+        height: 70px;
+    }
+
+    .attendance-table {
+        font-size: 1em;
+    }
+}
+
     background-color: #FAF9F6;
     color: #333;
 }
