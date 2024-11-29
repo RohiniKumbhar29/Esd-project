@@ -1,7 +1,7 @@
 const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbxIPziqxPigZ2ptkqGsP8bgrpIV2LVGd0aqYILKpKMq_ciawhBxuFGqjoncWRYlozJM/exec';
 
 let attendanceData = {}; // Global variable to store fetched data
-let selectedSubject = "DC"; // Default subject for student portal
+let selectedSubject = "DAA"; // Default subject for student portal
 let studentSearchQuery = ""; // To store the current search query for student names
 
 // Fetch data from Google Sheets API
