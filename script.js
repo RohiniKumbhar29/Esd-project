@@ -1,4 +1,4 @@
-const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbwZJu8Q4VdIu7aODBVEVsP_ZpU0Nh49Xqo7htg3Wmu6pSQoCRMlKTXILrWV82bwhXlI/exec';
+const SHEET_API_URL = 'https://script.google.com/macros/s/AKfycbxIPziqxPigZ2ptkqGsP8bgrpIV2LVGd0aqYILKpKMq_ciawhBxuFGqjoncWRYlozJM/exec';
 
 let attendanceData = {}; // Global variable to store fetched data
 let selectedSubject = "DC"; // Default subject for student portal
